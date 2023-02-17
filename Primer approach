@@ -30,6 +30,6 @@ int main (){
     int *red = NULL
     estados (int**)realloc(red, filas* sizeof(int*));
     for(i = 0; i < columnas; i++)
-        mat[i] = (int *)malloc(columnas * sizeof(int));
+        mat[i] = (int *)realloc(red, columnas * sizeof(int));
 }
 /*falta meter los datos en la matriz*/
